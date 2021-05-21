@@ -1,0 +1,644 @@
+{
+	"info": {
+		"_postman_id": "92cea4c4-f56e-4d08-a439-d29eacdaebce",
+		"name": "Lr№2_Smirnova",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/Authorization/token/{username}/{password}",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Authorization/token/{username}/{password}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Authorization",
+						"token",
+						"{username}",
+						"{password}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Items",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Items/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Items/{id}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Items",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Items/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Items/{id}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Items",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Items",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"\",\r\n    \"Price\":1.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Items",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Items",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Items/{id}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Items",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Baskets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Baskets",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Baskets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Baskets/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Baskets/{id}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Baskets",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Baskets/{PersonId}",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"id\":1,\"amount\":1},{\"id\":2,\"amount\":1},{\"id\":3,\"amount\":1}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Baskets/{PersonId}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Baskets",
+						"{PersonId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Baskets/add/{BasketId}/{itemid}/{amount}",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Baskets/add/{BasketId}/{itemid}/{amount}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Baskets",
+						"add",
+						"{BasketId}",
+						"{itemid}",
+						"{amount}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Baskets/put/{BasketId}/{positionid}/{amount}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Baskets/put/{BasketId}/{positionid}/{amount}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Baskets",
+						"put",
+						"{BasketId}",
+						"{positionid}",
+						"{amount}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Baskets/delete/{BasketId}/{positionid}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Baskets/delete/{BasketId}/{positionid}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Baskets",
+						"delete",
+						"{BasketId}",
+						"{positionid}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/People/order/{id}/{orderid}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/People/order/{id}/{orderid}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"People",
+						"order",
+						"{id}",
+						"{orderid}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/People/basket/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/People/basket/{id}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"People",
+						"basket",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/People/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/People/{id}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"People",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/People/allclients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/People/allclients",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"People",
+						"allclients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/People/countofclients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/People/countofclients",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"People",
+						"countofclients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/People/orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/People/orders",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"People",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/People/baskets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/People/baskets",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"People",
+						"baskets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/People/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/People/{id}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"People",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/People/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/People/{id}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"People",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/People/pay/{id}/{OrderId}",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/People/pay/{id}/{OrderId}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"People",
+						"pay",
+						"{id}",
+						"{OrderId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/People/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Login\":\"\",\"Password\":\"\",\"Phone\":\"\",\"FullName\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/People/add",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"People",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Orders",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Orders/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Orders/{id}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Orders",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Orders/allorders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Orders/allorders",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Orders",
+						"allorders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Orders/{PersonId}",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"id\":1,\"amount\":1}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Orders/{PersonId}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Orders",
+						"{PersonId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/Orders/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Orders/{id}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Orders",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
